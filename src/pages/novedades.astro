@@ -1,0 +1,60 @@
+---
+import Header from '../components/header.astro'
+import Cards from '../components/cards.astro'
+import Banner from '../components/banner.astro'
+import Contact from '../components/contacto.astro'
+import Footer from '../components/footer.astro'
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>CariloPaisajeProtegido</title>
+	</head>
+	<body>
+		<div class="container">
+			<Header />
+			<Banner />
+            <Cards />
+            
+			
+			<hr>
+			<Contact />
+			<Footer />
+		</div>
+	
+
+	</body>
+</html>
+
+
+<style>
+	body{
+		margin: 0;
+		padding: 0;
+		background-color: whitesmoke;
+		font-family: "DM Sans", sans-serif;
+		width: 100%;
+	}
+	html {
+    scroll-behavior: smooth;
+	}
+	
+	hr{
+		margin: 2rem 6rem;
+	}
+	.containe{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+		flex-wrap: nowrap;
+	}
+</style>
