@@ -1,0 +1,25 @@
+---
+import Img from '../components/leyImg.astro'
+import Texto from '../components/leyTexto.astro'
+---
+
+<div class="ley">
+    <Texto />    
+    <Img />
+</div>
+
+<style>
+    .ley{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: rgb(21, 107, 78);
+        margin: 2rem 0rem
+    }
+    @media screen and (max-width: 720px){
+        .ley{
+            padding-top: 1rem;
+        }
+    }
+</style>

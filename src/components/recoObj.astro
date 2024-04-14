@@ -1,0 +1,35 @@
+---
+const {title, text, logo,alt} = Astro.props
+--- 
+
+<div class="recomendaciones">
+    <img src= {logo} alt={alt}>
+    <div class="texto">
+        <p><strong>{title} </strong>{text}</p>
+    </div>
+</div>
+
+
+<style>
+    .recomendaciones{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        max-width: 500px;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    img{
+        min-width: 5rem;
+        max-width: 6vw;
+    }
+    p{
+        margin: 0;
+    }
+    @media screen and (max-width: 720px){
+        .recomendaciones{
+            flex-wrap: wrap;
+        }
+    }
+</style>

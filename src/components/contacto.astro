@@ -1,0 +1,27 @@
+---
+import Contact from './contacForms.astro'
+---
+
+<div class="contacto">
+    <img src="https://cileneencarilo.com.ar/wp-content/uploads/2019/11/bosque1.jpg" alt="">
+    <Contact />
+</div>
+
+<style>
+    .contacto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+    }
+    img{
+        width: 100%;
+    }
+    @media screen and (max-width: 720px) {
+        .contacto{
+            margin: 2rem;
+        }
+    }
+</style>

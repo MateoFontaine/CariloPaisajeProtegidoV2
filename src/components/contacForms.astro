@@ -1,0 +1,67 @@
+---
+
+---
+
+<div class="contacto">
+    <h2>Contacto</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, mollitia!</p>
+    <div class="forms">
+        <div class="fomrsText">
+            <p>Nombre Completo</p>
+            <input type="text">
+        </div>
+        <div class="fomrsText">
+            <p>Correo Electronico</p>
+            <input type="email">
+        </div>
+        <div class="fomrsText">
+            <p>Telefono</p>
+            <input type="number">
+        </div>
+        <div class="fomrsText">
+            <p>Mensaje</p>
+            <textarea id="mensaje" rows="4" cols="53"></textarea>
+        </div>
+        <div class="obligatorio">
+            <p>* Campos Obligatorios</p>
+            <button>Enviar</button>
+        </div>
+    </div>
+</div>
+
+<style>
+    .contacto{
+        width: 400px;
+    }
+    .obligatorio{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .obligatorio p{
+        font-size: .7rem;
+        color: red;
+    }
+    .fomrsText{
+        margin: 1rem 0rem;
+    }
+    input{
+        width: 100%;
+    }
+    .fomrsText p{
+        font-size: .7rem;
+        margin: 0;
+    }
+    button{
+        padding: .5rem;
+        background-color: rgb(38,81,71);
+        border-radius: 5px;
+        color: white;
+        border: 0px;
+    }
+    @media screen and (max-width: 720px) {
+        .contacto{
+            margin: 1rem;
+        }
+    }
+</style>

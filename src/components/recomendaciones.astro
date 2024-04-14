@@ -1,0 +1,24 @@
+---
+import Izquierda from './recoIzq.astro'
+import Derecha from './recoDer.astro'
+---
+
+<div class="recomendaciones">
+    <Izquierda />
+    <Derecha />
+</div>
+
+<style>
+    .recomendaciones{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    @media screen and (max-width: 720px) {
+        .recomendaciones{
+            margin: 1rem;
+        }
+    }
+</style>

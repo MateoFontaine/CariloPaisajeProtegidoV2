@@ -1,0 +1,29 @@
+---
+import NavLogo from '../components/navLogo.astro'
+import Nav from '../components/nav.astro'
+
+---
+<div class="navegacion">
+    <NavLogo />
+    <Nav />
+    
+</div>
+
+<style>
+    .navegacion{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem;
+    }
+    @media screen and (max-width: 720px) {
+        .navegacion{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
+        
+    }
+</style>

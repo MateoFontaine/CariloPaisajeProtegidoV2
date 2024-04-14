@@ -1,0 +1,25 @@
+---
+import Img from '../components/nosotrosImg.astro'
+import Texto from '../components/nosotrosTexto.astro'
+---
+<div class="nosotros">
+    <Img />
+    <div class="texto">
+        <Texto />
+    </div>
+
+</div>
+
+<style>
+    .nosotros{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    @media screen and (max-width: 720px) {
+        .nosotros{
+            margin: 1rem;
+        }
+    }
+</style>

@@ -1,0 +1,18 @@
+---
+import Texto from './recoObj.astro'
+import Velocidad from '../img/velocidad.png'
+import Caminando from '../img/caminando.png'
+import Sonido from '../img/sonido.png'
+import Alarma from '../img/alarma.png'
+import Fuego from '../img/fuego.png'
+
+---
+
+<div class="recomendaciones">
+    <h2>Recomendaciones para turistas <br> y Residentes</h2>
+    <Texto title="Tránsito:" text="🚗 Por favor, respeta los límites de velocidad. La máxima es de 30 km/h en todas las calles interiores y de 40 km/h en las calles Constancia, Divisadero y Cerezo. ¡Cuidemos juntos la seguridad de todos en la playa! 🚦🌴" logo= {Velocidad.src} alt="Cartel de reductor de velocidada"/>
+    <Texto title="Prioridad Peatonal:" text="🚶‍♂️ En esta zona no hay veredas, por lo que la prioridad absoluta es del peatón. Sé paciente, circula a baja velocidad y con precaución al sobrepasar. ¡Evita usar la bocina! Juntos creamos un ambiente más seguro para todos. 🚗🚶‍♀️" logo= {Caminando.src} alt="persona animada caminando"/>
+    <Texto title="Ruidos Molestos:" text="🔇 Recuerda que la Ley Provincial 12099 prohíbe la contaminación sonora. Por favor, minimiza el volumen de la música y cualquier otro ruido molesto. ¡Respeta el descanso de los vecinos y el ecosistema de nuestro bosque! 🌿🦉" logo= {Sonido.src} alt="perosna tapandose los oidos con una oreja arriba"/>
+    <Texto title=" Seguridad:" text="🔒 ¡Precaución en todo momento! En las viviendas, evita dejar objetos de valor a la vista. Conecta las alarmas al salir y verifica el cierre de puertas y ventanas con cortinas bajas. En los vehículos, asegúrate de cerrarlos y no dejar objetos de valor a la vista. ¡Tu seguridad es lo primero! 🔐🚗" logo= {Alarma.src} alt="Logo de una alarma sonando"/>
+    <Texto title="Prevención de Incendios:" text="🔥 ¡Cuidemos juntos nuestro entorno! Evita riesgos de fuego: no arrojes colillas de cigarro, botellas o vidrios en calles, terrenos baldíos y jardines. Evita los fogones en espacios no aptos y verifica que las brasas y parrillas estén apagadas correctamente al finalizar los asados. ¡Tu precaución es clave para prevenir incendios! 🚭🔥" logo= {Fuego.src} alt="Icono de fuego"/>
+</div>

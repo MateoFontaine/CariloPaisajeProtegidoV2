@@ -1,0 +1,28 @@
+---
+import logo from '../img/logo.png'
+---
+<div class="footer">
+    <img src={logo.src} alt="logo de bosques">
+    <h4>Carilo <br> Paisaje Protegido <br> Asociacion Civil</h4>
+</div>
+
+<style>
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        gap: 1rem;
+    }
+    img{
+        width: 6rem;
+        background-color: white;
+        padding: 1rem;
+        border-radius: 100%;
+    }
+     @media screen and (max-width: 720px) {
+        .logo img{
+            margin-bottom: 1rem;
+        }
+    }
+</style>
