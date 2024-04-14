@@ -1,24 +1,24 @@
----
+ ---
 
 ---
 
 <div class="contacto">
     <h2>Contacto</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, mollitia!</p>
+    <p>Completa el siguiente formulario o contactanos por <a href="#">Whatsapp</a></p>
     <form method="POST" class="formulario" data-netlify="true">
         <label>Nombre</label>
-        <input type="text" name="name" placeholder="Escribe tu nombre">
+        <input type="text" name="name" >
 
         <label>Correo Electronico</label>
-        <input type="text" name="email" placeholder="Correo electronico">
+        <input type="text" name="email">
 
         <label>Telefono</label>
-        <input type="number" name="number" placeholder="Escribe tu Telefono">
+        <input type="number" name="number">
 
         <label>Mensaje</label>
-        <textarea name="message" placeholder="Escribe tu mensaje"></textarea>
+        <textarea name="message"></textarea>
 
-        <input type="submit" value="enviar">
+        <input class="boton" type="submit" value="enviar">
     </form>
 </div>
 
@@ -30,6 +30,28 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    a{
+        color: green;
+    }
+    input{
+        border: 1px solid gray;
+        border-radius: 10px;
+        padding: .5rem 0rem;
+    }
+    textarea{
+        border: 1px solid gray;
+        border-radius: 10px;
+        padding: .5rem 0rem;
+    }
+    .boton{
+        margin-top: 1rem;
+        width: 5rem;
+        background-color: rgb(21, 107, 78);
+        color: white;
+        padding: .8rem 1rem .8rem 1rem;
+        border:0px;
+        border-radius: 10px;
     }
     @media screen and (max-width: 944px) {
         .contacto{
