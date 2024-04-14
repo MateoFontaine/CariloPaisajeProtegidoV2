@@ -5,27 +5,20 @@
 <div class="contacto">
     <h2>Contacto</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, mollitia!</p>
-    <form class="forms" netlify>
-        <div class="fomrsText">
-            <p>Nombre Completo</p>
-            <input type="text">
-        </div>
-        <div class="fomrsText">
-            <p>Correo Electronico</p>
-            <input type="email">
-        </div>
-        <div class="fomrsText">
-            <p>Telefono</p>
-            <input type="number">
-        </div>
-        <div class="fomrsText">
-            <p>Mensaje</p>
-            <textarea id="mensaje" rows="4" cols="53"></textarea>
-        </div>
-        <div class="obligatorio">
-            <p>* Campos Obligatorios</p>
-            <button>Enviar</button>
-        </div>
+    <form method="POST" class="formulario" netlify>
+        <label>Nombre</label>
+        <input type="text" placeholder="Escribe tu nombre">
+
+        <label>Correo Electronico</label>
+        <input type="text" placeholder="Correo electronico">
+
+        <label>Telefono</label>
+        <input type="number" placeholder="Escribe tu Telefono">
+
+        <label>Mensaje</label>
+        <textarea placeholder="Escribe tu mensaje"></textarea>
+
+        <input type="submit" value="enviar">
     </form>
 </div>
 
@@ -33,44 +26,14 @@
     .contacto{
         width: 400px;
     }
-    .obligatorio{
+    .formulario{
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .obligatorio p{
-        font-size: .7rem;
-        color: red;
-    }
-    .fomrsText{
-        margin: 1rem 0rem;
-    }
-    input{
-        width: 100%;
-    }
-    textarea{
-        width: 100%;
-    }
-    .fomrsText p{
-        font-size: .7rem;
-        margin: 0;
-    }
-    button{
-        padding: .5rem;
-        background-color: rgb(38,81,71);
-        border-radius: 5px;
-        color: white;
-        border: 0px;
+        flex-direction: column;
+        justify-content: center;
     }
     @media screen and (max-width: 944px) {
         .contacto{
             margin: 1rem;
-        }
-        input{
-            width: 100%;
-        }
-        textarea{
-            width: 100%;
         }
     }
 </style>
