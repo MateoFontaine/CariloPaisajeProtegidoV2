@@ -1,0 +1,20 @@
+---
+import Tarjeta from '../components/tarjeta.astro'
+---
+
+<div class="tarjetas">
+    <Tarjeta  link="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380848f0fc7d4018f18b49cf60694"/>
+    <Tarjeta link="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380848f0fc7b3018f18b0bad10642" />
+    <Tarjeta />
+</div>
+
+<style>
+    .tarjetas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: 2rem 0rem;
+    }
+</style>

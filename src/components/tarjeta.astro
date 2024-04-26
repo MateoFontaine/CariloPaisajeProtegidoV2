@@ -1,0 +1,59 @@
+---
+import Imagen from '../img/bosqueCarilo.jpeg'
+const {link} = Astro.props
+---
+
+<div class="tarjeta">
+    <img src={Imagen.src} alt="Bosque de pino">
+    <h2>Titulo del rango</h2>
+    <ul>
+        <li>Noricias al gmail</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+    <a href={link}><button>Asociarse</button></a>
+</div>
+
+
+<style>
+    .tarjeta{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: auto;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+        padding: 0rem 0rem 1rem 0rem;
+        border-radius: 10px;
+    }
+    h2{
+        margin: 1rem 0rem 0rem 0rem;
+    }
+    ul{
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 1rem 0rem;
+        width: 80%;
+    }
+    img{
+        width: 17rem;
+        border-radius: 10px 10px 0px 0px;
+    }
+    button{
+        background-color: whitesmoke;
+        color: rgb(21, 107, 78);
+        border-radius: 3px;
+        padding: .3rem .4rem;
+        border: 2px solid rgb(21, 107, 78);
+        transition: 500ms;
+    }
+    button:hover{
+        background-color: rgb(21, 107, 78);
+        color: white;
+    }
+</style>
